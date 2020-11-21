@@ -9,8 +9,8 @@ orbs:
 jobs:
   build-front:
     executor: node/default
-    working_directory: ~/cinema-front-end
     steps:
+      - cd ~/cinema-front-end
       - react/install
       - react/eslint
       - react/test
