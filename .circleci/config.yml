@@ -10,7 +10,7 @@ jobs:
   build-front:
     executor:
       name: node/default
-      tag: '13.14'
+      tag: '14'
     working_directory: ~/cinema-device/cinema-front-end
     steps:
       - checkout:
