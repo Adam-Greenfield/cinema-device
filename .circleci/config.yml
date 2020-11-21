@@ -8,7 +8,8 @@ orbs:
 # Orchestrate or schedule a set of jobs
 jobs:
   build-front:
-    working-directory: ~/cinema-front-end
+    executor: node/default
+    working_directory: ~/cinema-front-end
     steps:
       - react/intall
       - react/eslint:
@@ -20,7 +21,6 @@ jobs:
             - react/coverage:
                 requires:
                   - react/install
-
 workflows:
   push:
     jobs:
