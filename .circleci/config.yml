@@ -20,6 +20,4 @@ workflows:
       - react/coverage:
           requires:
             - react/install
-  back:
-    jobs:
-      
+
