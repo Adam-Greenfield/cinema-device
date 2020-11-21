@@ -9,6 +9,7 @@ orbs:
 jobs:
   build-front:
     executor: node/default
+    working-directory: cinema-front-end
     steps:
       - cinema-front-end/react/install
       - cinema-front-end/react/eslint
