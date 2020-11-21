@@ -10,13 +10,10 @@ jobs:
   build-front:
     executor: node/default
     steps:
-      - run:
-          name: CD into front
-          command: cd /cinema-front-end
-      - react/install
-      - react/eslint
-      - react/test
-      - react/coverage
+      - cinema-front-end/react/install
+      - cinema-front-end/react/eslint
+      - cinema-front-end/react/test
+      - cinema-front-end/react/coverage
 workflows:
   push:
     jobs:
