@@ -8,9 +8,7 @@ orbs:
 # Orchestrate or schedule a set of jobs
 jobs:
   build-front:
-    executor:
-      name: node/default
-      tag: '14'
+    executor: node/default
     working_directory: ~/cinema-device/cinema-front-end
     steps:
       - checkout:
