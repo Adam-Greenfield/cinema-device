@@ -11,7 +11,7 @@ jobs:
     executor: node/default
     working_directory: ~/cinema-front-end
     steps:
-      - react/intall
+      - react/install
       - react/eslint:
           requires:
             - react/install
