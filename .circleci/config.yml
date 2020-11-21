@@ -6,17 +6,22 @@ orbs:
   node: circleci/node@4.1.0
   react: thefrontside/react@0.2.0
 # Orchestrate or schedule a set of jobs
+jobs:
+  build-front:
+    working-directory: ~/cinema-front-end
+    steps:
+      - react/intall
+      - react/eslint:
+          requires:
+            - react/install
+            - react/test:
+                requires:
+                  - react/install
+            - react/coverage:
+                requires:
+                  - react/install
 
 workflows:
   push:
     jobs:
-      - react/install
-      - react/eslint:
-          requires:
-            - react/install
-      - react/test:
-          requires:
-            - react/install
-      - react/coverage:
-          requires:
-            - react/install
+      - build-front
