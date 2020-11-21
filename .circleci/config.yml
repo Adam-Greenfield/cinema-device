@@ -12,15 +12,9 @@ jobs:
     working_directory: ~/cinema-front-end
     steps:
       - react/install
-      - react/eslint:
-          requires:
-            - react/install
-            - react/test:
-                requires:
-                  - react/install
-            - react/coverage:
-                requires:
-                  - react/install
+      - react/eslint
+      - react/test
+      - react/coverage
 workflows:
   push:
     jobs:
