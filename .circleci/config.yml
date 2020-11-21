@@ -11,6 +11,7 @@ jobs:
     executor: node/default
     working_directory: cinema-front-end
     steps:
+      - checkout
       - react/install
       - react/eslint
       - react/test
