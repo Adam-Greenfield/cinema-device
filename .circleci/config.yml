@@ -10,7 +10,9 @@ jobs:
   build-front:
     executor: node/default
     steps:
-      - cd ~/cinema-front-end
+      - run:
+          name: CD into front
+          command: cd ~/cinema-front-end
       - react/install
       - react/eslint
       - react/test
