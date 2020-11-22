@@ -35,3 +35,4 @@ workflows:
   push:
     jobs:
       - build-front
+      - build-back
