@@ -23,14 +23,14 @@ jobs:
     executor:
       name: node/default
       tag: '14.15'
-      working_directory: ~/cinema-device/cinema-back-end
-      steps:
-        - checkout:
-            path: ~/cinema-device
-        - run:
-            command: npm install express --save
-        - run:
-            command: npm run start
+    working_directory: ~/cinema-device/cinema-back-end
+    steps:
+      - checkout:
+          path: ~/cinema-device
+      - run:
+          command: npm install express --save
+      - run:
+          command: npm run start
 workflows:
   push:
     jobs:
