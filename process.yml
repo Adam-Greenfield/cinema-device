@@ -1,0 +1,60 @@
+# Orb 'circleci/node@4.1.0' resolved to 'circleci/node@4.1.0'
+# Orb 'thefrontside/react@0.2.0' resolved to 'thefrontside/react@0.2.0'
+version: 2
+jobs:
+  build-front:
+    docker:
+    - image: cimg/node:14.15
+    working_directory: ~/cinema-device/cinema-front-end
+    steps:
+    - checkout:
+        path: ~/cinema-device
+    - run:
+        command: yarn install
+    - run:
+        command: mkdir -p reports/eslint
+        name: Ensure artifacts directory is present
+    - run:
+        command: yarn eslint --max-warnings=0 --format junit --output-file ./reports/eslint/eslint.xml
+    - run:
+        command: yarn add --dev jest-junit
+        name: Install JUnit reporter
+    - run:
+        command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
+        environment:
+          JEST_JUNIT_OUTPUT: reports/junit/js-test-results.xml
+        name: Run tests with JUnit as reporter
+    - run:
+        command: yarn test --collectCoverage --coverageDirectory=./artifacts/coverage
+workflows:
+  push:
+    jobs:
+    - build-front
+  version: 2
+
+# Original config.yml file:
+# # Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
+# version: 2.1
+# # Use a package of configuration called an orb.
+# orbs:
+#   # Declare a dependency on the welcome-orb
+#   node: circleci/node@4.1.0
+#   react: thefrontside/react@0.2.0
+# # Orchestrate or schedule a set of jobs
+# jobs:
+#   build-front:
+#     executor:
+#       name: node/default
+#       tag: '14.15'
+#     working_directory: ~/cinema-device/cinema-front-end
+#     steps:
+#       - checkout:
+#           path: ~/cinema-device
+#       - react/install
+#       - react/eslint
+#       - react/test
+#       - react/coverage
+# workflows:
+#   push:
+#     jobs:
+#       - build-front
