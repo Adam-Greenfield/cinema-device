@@ -28,7 +28,7 @@ jobs:
       - checkout:
           path: ~/cinema-device
       - run:
-          command: yarn install express --save
+          command: yarn add express --save
       - run:
           command: yarn install sequelize pg pg-hstore
 workflows:
