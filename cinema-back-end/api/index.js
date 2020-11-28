@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 
 // TODO: Remove this function and actually implement authentication
 app.use('/', (req, res, next) => {
-    req.userId = 'TODO'
+    req.userId = 'cinema_device'
     next()
 })
 
@@ -23,3 +23,6 @@ database.sync().then(() => {
         console.log(`Listening on port ${port}`)
     })
 })
+
+//set up env variables and build docker database
+//seed database

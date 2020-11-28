@@ -1,9 +1,8 @@
 const Sequelize = require('sequelize')
 
-const database = new Sequelize({
-    database: 'movie_catalog',
-    dialect: 'postgres',
-    operatorsAliases: Sequelize.Op
+const database = new Sequelize('cinema_device', 'cinema_user', 'cinema_password', {
+    host: 'localhost',
+    dialect: 'postgres'
 })
 
 const Film = database.define('film', {
@@ -24,6 +23,7 @@ const Booking = database.define('booking', {
 })
 
 const Showing = database.define('showing', {
+    id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
     dateTime: { type: Sequelize.DATE }
 })
 
@@ -31,8 +31,10 @@ const Seat = database.define('seat', {
     available: { type: Sequelize.BOOLEAN, default: false }
 })
 
-Booking.belongsTo(Showing);
+//Booking.belongsTo(Showing);
 Booking.hasMany(Seat);
+
+Showing.hasMany(Booking);
 
 Seat.belongsTo(Screen);
 Seat.belongsTo(Booking);
@@ -50,5 +52,6 @@ module.exports = {
     Screen,
     Booking,
     Showing,
-    Seat
+    Seat,
+    database
 }
