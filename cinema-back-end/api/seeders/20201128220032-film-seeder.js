@@ -2,26 +2,32 @@
 
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        await queryInterface.bulkInsert('films', [
+        return queryInterface.bulkInsert('films', [
             {
-                title: "Pride and Porpoises",
+                title: 'Pride and Porpoises',
                 duration: 90,
-                img: ""
+                img: '',
+                createdAt: new Date(),
+                updatedAt: new Date()
             },
             {
-                title: "Hens and Sensibility",
+                title: 'Hens and Sensibility',
                 duration: 88,
-                img: ""
+                img: '',
+                createdAt: new Date(),
+                updatedAt: new Date()
             },
             {
-                title: "Wuthering Kites",
+                title: 'Wuthering Kites',
                 duration: 105,
-                img: ""
+                img: '',
+                createdAt: new Date(),
+                updatedAt: new Date()
             }
         ], {});
     },
 
     down: async (queryInterface, Sequelize) => {
-        queryInterface.bulkDelete('films', null, {});
+        return queryInterface.bulkDelete('films', null, {});
     }
 };
