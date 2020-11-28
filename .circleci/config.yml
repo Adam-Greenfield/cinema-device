@@ -23,7 +23,7 @@ jobs:
     working_directory: ~/cinema-device/cinema-back-end
     docker:
       - image: circleci/node:14.15
-      - image: circleci/postgres:12.5-alpine
+      - image: circleci/postgres:9.6.9-alpine
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
