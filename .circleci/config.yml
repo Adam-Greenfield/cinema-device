@@ -8,10 +8,10 @@ orbs:
 # Orchestrate or schedule a set of jobs
 jobs:
   build-front:
+    working_directory: ~/cinema-device/cinema-front-end
     executor:
       name: node/default
       tag: '14.15'
-    working_directory: ~/cinema-device/cinema-front-end
     steps:
       - checkout:
           path: ~/cinema-device
@@ -20,17 +20,21 @@ jobs:
       - react/test
       - react/coverage
   build-back:
-    executor:
-      name: node/default
-      tag: '14.15'
     working_directory: ~/cinema-device/cinema-back-end
+    docker:
+      - image: circleci/node:14.15
+      - image: circleci/postgres:12.5-alpine
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+        environment:
+          POSTGRES_USER: cinema_user
+          POSTGRES_DB: cinema_device
     steps:
       - checkout:
           path: ~/cinema-device
-      - run:
-          command: yarn add express --save
-      - run:
-          command: yarn install sequelize pg pg-hstore
+      - run: yarn add express --save
+      - run: yarn install sequelize pg pg-hstore
 workflows:
   push:
     jobs:
