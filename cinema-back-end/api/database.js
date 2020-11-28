@@ -7,7 +7,7 @@ const database = new Sequelize('cinema_device', 'cinema_user', 'cinema_password'
 
 const Film = database.define('film', {
     title: { type: Sequelize.JSONB, allowNull: false },
-    lengthInMins: { type: Sequelize.INTEGER },
+    duration: { type: Sequelize.INTEGER },
     img: { type: Sequelize.STRING, allowNull: true}
 })
 
