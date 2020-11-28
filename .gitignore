@@ -21,3 +21,7 @@ cinema-front-end/.env.production.local
 cinema-front-end/npm-debug.log*
 cinema-front-end/yarn-debug.log*
 cinema-front-end/yarn-error.log*
+
+cinema-back-end/node_modules
+
+.idea/workspace.xml
