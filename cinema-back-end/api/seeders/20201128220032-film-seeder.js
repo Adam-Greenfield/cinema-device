@@ -4,25 +4,16 @@ module.exports = {
     up: async (queryInterface, Sequelize) => {
         return queryInterface.bulkInsert('films', [
             {
-                title: 'Pride and Porpoises',
-                duration: 90,
-                img: '',
-                createdAt: new Date(),
-                updatedAt: new Date()
+                capacity: 120,
+                number: 1
             },
             {
-                title: 'Hens and Sensibility',
-                duration: 88,
-                img: '',
-                createdAt: new Date(),
-                updatedAt: new Date()
+                capacity: 80,
+                number: 2
             },
             {
-                title: 'Wuthering Kites',
-                duration: 105,
-                img: '',
-                createdAt: new Date(),
-                updatedAt: new Date()
+                capacity: 94,
+                number: 3
             }
         ], {});
     },
