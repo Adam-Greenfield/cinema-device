@@ -45,7 +45,6 @@ Screen.belongsToMany(Film, {
     through: Showing
 })
 
-
 module.exports = {
     Film,
     Screen,
