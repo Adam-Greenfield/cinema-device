@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc88f5b-306c-4a21-9750-2224c5f754ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/bookingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/bookingController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/routes/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/routes/booking.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
       <workItem from="1605988821372" duration="663000" />
       <workItem from="1605990356380" duration="9971000" />
       <workItem from="1606339296977" duration="906000" />
-      <workItem from="1606556726972" duration="16913000" />
+      <workItem from="1606556726972" duration="27049000" />
     </task>
     <servers />
   </component>

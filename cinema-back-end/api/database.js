@@ -17,9 +17,18 @@ const Screen = database.define('screen', {
 })
 
 const Booking = database.define('booking', {
-    confirmed: { type: Sequelize.BOOLEAN },
+    confirmed: { type: Sequelize.BOOLEAN, default: false },
     email: { type: Sequelize.STRING },
-    name: { type: Sequelize.STRING }
+    name: { type: Sequelize.STRING },
+    showingId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'Showing',
+            key: 'id',
+        },
+        onDelete: 'CASCADE'
+    }
 })
 
 const Showing = database.define('showing', {
@@ -31,10 +40,10 @@ const Seat = database.define('seat', {
     available: { type: Sequelize.BOOLEAN, default: false }
 })
 
-//Booking.belongsTo(Showing);
 Booking.hasMany(Seat);
 
 Showing.hasMany(Booking);
+Booking.belongsTo(Showing);
 
 Seat.belongsTo(Screen);
 Seat.belongsTo(Booking);
