@@ -1,26 +1,27 @@
 'use strict';
+const { Screen } = require('../database');
 
 module.exports = {
     up: async (queryInterface, Sequelize) => {
+
+        await Screen.destroy({where: {}})
+
         return queryInterface.bulkInsert('screens', [
             {
-                title: 'Pride and Porpoises',
-                duration: 90,
-                img: '',
+                capacity: 120,
+                number: 1,
                 createdAt: new Date(),
                 updatedAt: new Date()
             },
             {
-                title: 'Hens and Sensibility',
-                duration: 88,
-                img: '',
+                capacity: 80,
+                number: 2,
                 createdAt: new Date(),
                 updatedAt: new Date()
             },
             {
-                title: 'Wuthering Kites',
-                duration: 105,
-                img: '',
+                capacity: 94,
+                number: 3,
                 createdAt: new Date(),
                 updatedAt: new Date()
             }

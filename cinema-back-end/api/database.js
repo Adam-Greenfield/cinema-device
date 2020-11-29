@@ -33,7 +33,7 @@ const Booking = database.define('booking', {
 
 const Showing = database.define('showing', {
     id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
-    dateTime: { type: Sequelize.DATE }
+    startDateTime: { type: Sequelize.DATE }
 })
 
 const Seat = database.define('seat', {
@@ -48,12 +48,13 @@ Booking.belongsTo(Showing);
 Seat.belongsTo(Screen);
 Seat.belongsTo(Booking);
 
+// create the following associations manually so we can have duplicate film + screen id
 Film.belongsToMany(Screen, {
-    through: Showing
+    through: { model: Showing, unique: false }
 })
 
 Screen.belongsToMany(Film, {
-    through: Showing
+    through: { model: Showing, unique: false }
 })
 
 module.exports = {
