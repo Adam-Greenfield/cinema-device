@@ -21,9 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="acc88f5b-306c-4a21-9750-2224c5f754ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/bookingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/bookingController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/filmController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/filmController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/screenController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/screenController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/showingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/showingController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/routes/film.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/routes/film.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/routes/screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/routes/screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/routes/showing.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/routes/showing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-front-end/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/0799-PEN-2.0" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,7 +74,7 @@
       <workItem from="1605988821372" duration="663000" />
       <workItem from="1605990356380" duration="9971000" />
       <workItem from="1606339296977" duration="906000" />
-      <workItem from="1606556726972" duration="28742000" />
+      <workItem from="1606556726972" duration="49694000" />
     </task>
     <servers />
   </component>
@@ -88,10 +94,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2595" y="180" width="732" height="523" key="FileChooserDialogImpl" timestamp="1606388813367">
+    <state x="2595" y="180" width="732" height="523" key="FileChooserDialogImpl" timestamp="1606662388502">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2699" y="295" width="424" height="491" key="FileChooserDialogImpl/0.0.5760.2520@0.0.5760.2520" timestamp="1606058457632" />
+    <state x="2595" y="180" key="FileChooserDialogImpl/1684.1080.2560.1440/0.0.1920.1080/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1606662388502" />
     <state x="2595" y="180" width="732" height="523" key="FileChooserDialogImpl/1684.1080.2560.1440/72.0.1848.1080/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1606388813367" />
   </component>
 </project>

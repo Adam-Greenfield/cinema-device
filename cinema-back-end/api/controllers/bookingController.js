@@ -33,11 +33,7 @@ function update(req, res, next) {
 }
 
 function index(req, res, next) {
-    const { limit = 50, skip = 0 } = req.query;
-    Booking.find()
-        .skip(skip)
-        .limit(limit)
-        .exec()
+    Booking.findAll()
         .then((bookings) => res.json(bookings),
             (e) => next(e));
 }

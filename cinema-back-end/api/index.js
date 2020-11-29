@@ -23,9 +23,9 @@ var screenRouter = require('./routes/screen');
 var showingRouter = require('./routes/showing');
 
 app.use('/bookings', bookingRouter);
-// // app.use('/films', filmRouter);
-// // app.use('/screens', screenRouter);
-// // app.use('/showings', showingRouter);
+app.use('/films', filmRouter);
+app.use('/screens', screenRouter);
+app.use('/showings', showingRouter);
 
 database.sync().then(() => {
     app.listen(port, () => {
