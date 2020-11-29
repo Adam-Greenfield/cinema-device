@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Selector from './filmSelector/selector'
+import Selector from './components/filmSelector/selector'
 
 function App() {
   return (
