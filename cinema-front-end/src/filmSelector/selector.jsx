@@ -1,22 +1,31 @@
 import React, {useEffect, useState} from 'react';
+import styled from 'styled-components';
 import FilmBox from './filmBox'
+
+const StyledSelector = styled.div`
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+`;
 
 const Selector = () => {
 
-    let films = []
+    const [films, setfilms] = useState([]);
 
     useEffect(() => {
         fetch(process.env.REACT_APP_API_ADDRESS + '/films')
             .then((response) => response.json())
-            .then((data) => films = data);
+            .then((data) => setfilms(data));
     },[])
 
     return (
-        <div>
-            { films && films.map(( film ) => {
+        <StyledSelector>
+            <p>Films: </p>
+            { films && films.map( film => (
                 <FilmBox film={film}/>
-            }) }
-        </div>
+            ))}
+        </StyledSelector>
     )
 }
 

@@ -21,15 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="acc88f5b-306c-4a21-9750-2224c5f754ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/bookingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/bookingController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/filmController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/filmController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/screenController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/screenController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/controllers/showingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/controllers/showingController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/routes/film.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/routes/film.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/routes/screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/routes/screen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-back-end/api/routes/showing.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-back-end/api/routes/showing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema-front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-front-end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-front-end/src/filmSelector/filmBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-front-end/src/filmSelector/filmBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cinema-front-end/src/filmSelector/selector.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-front-end/src/filmSelector/selector.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,7 @@
       <workItem from="1605988821372" duration="663000" />
       <workItem from="1605990356380" duration="9971000" />
       <workItem from="1606339296977" duration="906000" />
-      <workItem from="1606556726972" duration="49694000" />
+      <workItem from="1606556726972" duration="51573000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,8 @@ const StyledFilmBox = styled.div`
     width: 100px;
     height: 200px;
     border: 1px solid black;
+    display: inline-block;
+    margin: 60px 40px 0;
 `;
 
 const StyledTitle = styled.p`
@@ -15,12 +17,9 @@ const StyledTitle = styled.p`
 
 const FilmBox = ({film}) => {
 
-    let films = []
 
     useEffect(() => {
-        fetch(process.env.REACT_APP_API_ADDRESS + '/films')
-            .then((response) => response.json())
-            .then((data) => films = data);
+
     },[])
 
     return (
